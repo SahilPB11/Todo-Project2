@@ -10,7 +10,7 @@ const connectDB = async() => {
             useNewUrlParser: true,
           useUnifiedTopology: true,
         })
-        .then(() => console.log("databse connected safely"))
+        .then((c) => console.log(`Databse connected safely with ${c.connection.host}`))
     }catch{(error)
         console.log(error);
     }
